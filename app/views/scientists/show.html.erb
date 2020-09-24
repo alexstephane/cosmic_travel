@@ -1,0 +1,21 @@
+
+
+<p>
+<strong>Name:</strong>
+<%= @scientist.name %>
+</p>
+
+
+<p>
+<strong>field of study:</strong>
+<%= @scientist.field_of_study  %>
+</p>
+
+<%= link_to 'Planets I have visisted', planets_path() %>
+
+
+
+<br>
+<%= link_to "click here to edit this scientist",edit_scientist_path(@scientist)%>
+<br>
+<%= link_to "click here to delete this scientist" , scientist_path(@scientist.id), method: "delete"%>
